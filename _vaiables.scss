@@ -1,0 +1,23 @@
+$mainColor:#161313;
+$secondaryColor:#fff;
+$orangeColor:#e34d00;
+$graycolor:#545454;
+$boxcolor:#1d1c1c;
+$cardWidth:200px;
+$inputSize:280px;
+a , a:hover , a:focus{
+    text-decoration: none !important;
+}
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.myparag{
+    color:#d1d1d1;
+}
+.orange{
+    color:$orangeColor ; 
+}
+
+

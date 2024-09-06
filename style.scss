@@ -1,0 +1,437 @@
+@import'vaiables';
+
+@mixin changeColor {
+    color:$orangeColor !important; 
+}
+@mixin changeBG {
+    background-color: $orangeColor  !important;
+}
+body{
+    font-family: "Readex Pro", sans-serif;
+   background-color:$mainColor !important ;
+}
+.maintitle{
+    h3{
+        width: 33%;
+        margin: 0px auto;  
+    }
+    p{
+        width: 35%;
+        margin: 0px auto;
+        color:#d1d1d1;
+    }
+}
+.mainbox{
+    background-image: linear-gradient(#1d1c1c, #e34d00);
+        padding: 2px;
+        overflow: hidden !important;
+        border-radius: 18px;
+        border-bottom: 3px solid #e34d00;
+}
+
+// start header
+.head
+ {
+    box-shadow: 0px -2px 0px #1b1c1d;
+    background-color:$mainColor;
+    .navbar{
+        .navbar-brand{
+            margin-right:0px
+        }
+        .nav-item {
+            .nav-link{
+                text-transform: capitalize;
+                font-size: 17px;
+                color: white;
+                margin-left: 10px;
+            }
+            .active {
+                @include changeColor;
+            }
+        }
+        .dropdown-menu[data-bs-popper] {
+            background-color: $boxcolor;
+             left: 20px;
+             margin-top: 42px;
+         }
+        .dropdown-menu{
+            min-width: 15rem;
+            border-radius: 0%;
+            .dropdown-item{
+                color: white;
+                padding-left: 30px;
+                &:hover{
+                    @include changeColor;
+                    background-color: $boxcolor;
+                }
+            }
+            .DItem-active{
+                @include changeColor;   
+            }
+        }
+    }
+    .btn-outline {
+        border-color: $orangeColor !important;
+        &:hover{
+            @include changeBG;
+          
+        }
+        }
+    
+}
+// start hero-section
+.hero-section{
+    min-height: 90vh;
+    .hero-content{
+    
+        h2{
+            font-size: 55px;
+            line-height: 1.6;
+            width: 80%;
+        }
+        .form{
+            input{
+                width: $inputSize;
+                padding-left: 25px;
+                
+                font-size: .8rem !important;
+                border-color:$orangeColor;
+                background-color: $mainColor;
+            }
+            .form-control::placeholder{
+                color: white!important;
+            }
+            .btn
+        //    {
+        //     @extend .btn-outline;
+        //    }
+        {
+            border-color: $orangeColor !important;
+            &:hover{
+                @include changeBG;
+              
+            }
+        }
+        }
+    }
+    .hero-img{
+        width: 90%;
+    }
+}
+// start article
+article
+{
+    .box{
+        background-color:$boxcolor; 
+        box-shadow: 0px 2px 0px $boxcolor;
+        border-radius: 13px;
+        span{
+            border-color: $orangeColor !important;
+            @include changeColor;
+            &:hover{
+               @include changeBG  ;
+               color: $secondaryColor !important;
+            }
+        }  
+        .info{
+            .para{
+                color:#d1d1d1;
+
+            }
+            .read-link{
+                font-size: 14px !important;
+               
+            }
+            a{
+                &:hover{
+                   @include changeColor;
+                }
+            }
+        }  
+          }
+}
+// counter
+
+    
+    .counter{
+        
+         position: relative;
+         .full-img{
+            z-index: 11;
+         }
+         .container-fluied{
+            background-color: $boxcolor;
+            .row{
+               min-height: 40vh;
+
+                .count{
+                    position: absolute ;
+                  
+                   .count-info{
+                       .plus{
+                       color:$orangeColor !important;
+                       }
+                     
+                   }
+               }
+            }
+         }
+        
+        
+   
+}
+// revolution-section
+.revolution-sec{
+    .title1{
+        h3{
+            width: 40%;
+        }
+
+    }
+    .revo-list{
+        li{
+            border-color: $orangeColor !important;
+            &:hover{
+                a{
+                    color: $orangeColor !important;
+                }
+              .fa-arrow-right{
+                         color: $orangeColor !important;
+                }
+              }
+           
+            
+            
+        }
+    }
+    .parg{
+        color:#d1d1d1;
+    }
+    .brain-img {
+        img{
+            width: 85%;
+            border-radius: 13px;
+        }
+       
+
+    }
+}
+// network theory 
+section{
+.title2{
+   @extend .maintitle;
+}
+
+.box{
+//     background-image: linear-gradient($boxcolor,$orangeColor );
+//     padding: 2px;
+//     overflow: hidden !important;
+// border-radius: 18px;
+// border-bottom: 3px solid $orangeColor;
+@extend .mainbox;
+    .box-content{
+        background-color: $boxcolor;
+        width: 100%;
+        height: 100;
+        padding: 35px;
+        .box-title{
+            &:hover{
+                color: $orangeColor !important;
+            }
+            
+        }
+        p
+        {
+         width: 75%;
+         color:#d1d1d1;
+        }
+        .read-link{
+           font-size: 14px;
+           .fa-arrow-right {
+               color: $orangeColor !important;
+           } 
+           &:hover{
+               color: $orangeColor !important;
+           } 
+         }
+
+    }
+    
+}
+.box1{
+    background-image: linear-gradient($orangeColor,$boxcolor );
+ 
+border-top: 1px solid $orangeColor;
+border-bottom: none;
+}
+}
+
+// start AIsocial
+.AIsocials{
+    // .girl-img img{
+    //     width: 95%;
+    // }
+    .info{
+        .titl3{
+            h3{
+                width: 90% !important;
+            }
+            
+        }
+        .box{
+       
+           @extend .mainbox;     
+            .box-content{
+                background-color: $boxcolor;
+                width: 100%;
+                height: 100;
+                padding: 20px;
+                .num{
+                    font-size: 50px;
+    
+    
+                }
+                .myparag{
+                    width: 60%;
+                }
+            }
+        }
+      
+    }
+}
+// persons
+.persons{
+    .title4{
+        .view-btn{
+           @include changeBG;
+            width: 150px;
+height: 60px;
+            }
+    }
+    .box {
+       
+        @extend .mainbox;
+        .info{
+            background-color: #1d1c1c;
+            width: 100%;
+            height: 100;
+            padding: 10px;
+            .info img{
+                border-radius: 18px;
+              }
+          }
+      }
+}
+// slider
+.slider-sec
+
+{
+    background-color: $boxcolor;
+    .title{
+        @extend .maintitle;
+
+    }
+    .carousel-item
+    {
+        .first{
+            @extend .mainbox;
+            .content{
+                background-color:$boxcolor;
+        width: 100%;
+        height: 100%;
+            }
+        }
+    }
+}
+// security
+.security{
+    .security-content{
+        ul{
+            .fas{
+               @include changeColor;
+            }
+        }
+        
+    }
+    .accordion{
+        .accordion-item{
+            border-radius: 6px;
+overflow: hidden;
+background-color: $mainColor;
+.accordion-header{
+    border-color:$boxcolor ;
+    margin-bottom: 14px;
+    .accordion-button{
+        background-color: $boxcolor;
+        &:focus{
+            box-shadow: none;
+          
+        }
+        
+        &::after{
+            @include changeColor;
+}
+    }
+}
+        }
+        
+        
+    }
+}
+// start physical
+.physical
+{
+    .title-5{
+        width: 71%;
+      }
+      .view-btn {
+       @include changeBG;
+        width: 150px;
+        height: 60px;
+        
+      }
+      .box{
+        @extend .box;
+        .info
+        {
+            background-color: #1d1c1c;
+            width: 100%;
+            height: 100;
+            padding: 20px;
+            h4
+            {
+                width: 95% !important;
+                .box-title{
+                    &:hover{
+@include changeColor;
+                    }
+                }
+            }
+            .read-link{
+                &:hover{
+                    @include changeColor;
+                }
+            }
+        }
+      }
+      .box1{
+        @extend .box1;
+      }
+}
+
+// footer
+.foot{
+.social{
+    .active{
+@include changeBG;
+.fab{
+    font-size: 13px;
+
+}
+
+a{
+    border: 1px solid #1b1c1d;
+}
+    }
+}
+  }
