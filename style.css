@@ -215,7 +215,7 @@ section .box1, section .physical .box1, .physical section .box1 {
 .AIsocials .info .box .box-content {
   background-color: #1d1c1c;
   width: 100%;
-  height: 100;
+  height: 100%;
   padding: 20px;
   border-radius: 18px;
 }
