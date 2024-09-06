@@ -36,8 +36,6 @@ body {
   padding: 2px;
   overflow: hidden !important;
   border-radius: 18px;
-  border-bottom-left-radius: calc(0.25rem - 1px);
-  border-bottom-right-radius: calc(0.25rem - 1px);
 }
 
 .head {
@@ -155,6 +153,10 @@ article .box .info a:hover {
 .counter .container-fluied .row .count {
   position: absolute;
 }
+.counter .container-fluied .row .count .icon {
+  width: 60px;
+  height: 60px;
+}
 .counter .container-fluied .row .count .count-info .plus {
   color: #e34d00 !important;
 }
@@ -182,8 +184,9 @@ article .box .info a:hover {
 section .box .box-content {
   background-color: #1d1c1c;
   width: 100%;
-  height: 100;
+  height: 100%;
   padding: 35px;
+  border-radius: 18px;
 }
 section .box .box-content .box-title:hover {
   color: #e34d00 !important;
@@ -203,7 +206,6 @@ section .box .box-content .read-link:hover {
 }
 section .box1, section .physical .box1, .physical section .box1 {
   background-image: linear-gradient(#e34d00, #1d1c1c);
-  border-top: 1px solid #e34d00;
   border-bottom: none;
 }
 
@@ -215,6 +217,7 @@ section .box1, section .physical .box1, .physical section .box1 {
   width: 100%;
   height: 100;
   padding: 20px;
+  border-radius: 18px;
 }
 .AIsocials .info .box .box-content .num {
   font-size: 50px;
@@ -233,9 +236,15 @@ section .box1, section .physical .box1, .physical section .box1 {
   width: 100%;
   height: 100;
   padding: 10px;
-}
-.persons .box .info .info img {
   border-radius: 18px;
+}
+.persons .box .info img {
+  transition: all 0.4s ease-in-out;
+  height: 260px;
+  border-radius: 10px;
+}
+.persons .box .info img:hover {
+  transform: scale(1.1);
 }
 
 .slider-sec {
@@ -245,6 +254,7 @@ section .box1, section .physical .box1, .physical section .box1 {
   background-color: #1d1c1c;
   width: 100%;
   height: 100%;
+  border-radius: 18px;
 }
 
 .security .security-content ul .fas {
@@ -282,6 +292,7 @@ section .box1, section .physical .box1, .physical section .box1 {
   width: 100%;
   height: 100;
   padding: 20px;
+  border-radius: 18px;
 }
 .physical .box .info h4 {
   width: 95% !important;
@@ -295,9 +306,10 @@ section .box1, section .physical .box1, .physical section .box1 {
 .foot .social .active {
   background-color: #e34d00 !important;
 }
-.foot .social .active .fab {
-  font-size: 13px;
+.foot .social li {
+  width: 30px;
+  height: 30px;
 }
-.foot .social .active a {
-  border: 1px solid #1b1c1d;
+.foot .social .fab {
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */

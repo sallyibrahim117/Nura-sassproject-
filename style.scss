@@ -27,8 +27,8 @@ body{
         overflow: hidden !important;
         border-radius: 18px;
         // border-bottom: 3px solid #e34d00;
-        border-bottom-left-radius: calc(.25rem - 1px);
-        border-bottom-right-radius: calc(.25rem - 1px);
+        // border-bottom-left-radius: 18px;
+        // border-bottom-right-radius: 18px;
 }
 
 // start header
@@ -168,7 +168,10 @@ article
 
                 .count{
                     position: absolute ;
-                  
+                  .icon{
+                    width: 60px;
+                    height: 60px;
+                  }
                    .count-info{
                        .plus{
                        color:$orangeColor !important;
@@ -234,8 +237,9 @@ section{
     .box-content{
         background-color: $boxcolor;
         width: 100%;
-        height: 100;
+        height: 100%;
         padding: 35px;
+        border-radius: 18px;
         .box-title{
             &:hover{
                 color: $orangeColor !important;
@@ -263,7 +267,7 @@ section{
 .box1{
     background-image: linear-gradient($orangeColor,$boxcolor );
  
-border-top: 1px solid $orangeColor;
+// border-top: 1px solid $orangeColor;
 border-bottom: none;
 }
 }
@@ -288,6 +292,7 @@ border-bottom: none;
                 width: 100%;
                 height: 100;
                 padding: 20px;
+                border-radius: 18px;
                 .num{
                     font-size: 50px;
     
@@ -318,8 +323,15 @@ height: 60px;
             width: 100%;
             height: 100;
             padding: 10px;
-            .info img{
-                border-radius: 18px;
+            border-radius: 18px;
+            
+            img{
+                transition: all .4s ease-in-out;
+                height: 260px;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.1);
+                }
               }
           }
       }
@@ -341,6 +353,7 @@ height: 60px;
                 background-color:$boxcolor;
         width: 100%;
         height: 100%;
+        border-radius: 18px;
             }
         }
     }
@@ -400,6 +413,7 @@ background-color: $mainColor;
             width: 100%;
             height: 100;
             padding: 20px;
+            border-radius: 18px;
             h4
             {
                 width: 95% !important;
@@ -426,14 +440,18 @@ background-color: $mainColor;
 .social{
     .active{
 @include changeBG;
+    }
+li{
+    width: 30px;
+    height: 30px;
+}
+
 .fab{
     font-size: 13px;
 
 }
 
-a{
-    border: 1px solid #1b1c1d;
-}
+
     }
 }
-  }
+ 
