@@ -4,6 +4,8 @@
 // }
 let num=document.querySelector(".timer");
 let num2=document.querySelector(".timer-2");
+let num3=document.querySelector(".timer-3");
+let num4=document.querySelector(".timer-4");
 
 increase(num,400)
 increase(num2,80,40)
