@@ -9,8 +9,8 @@ let num4=document.querySelector(".timer-4");
 
 increase(num,400)
 increase(num2,80,40)
-increase(num2,20,100)
-increase(num2,100,100)
+increase(num3,20,100)
+increase(num4,100,100)
 function increase(el,number,timer=10){
     let counter=0;
 let interval=setInterval(() => {
