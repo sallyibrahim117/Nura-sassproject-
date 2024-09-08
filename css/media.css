@@ -10,7 +10,13 @@ gap: 10px;
 align-items: center;
   }
   .hero-section .hero-content .form input {
-    width: 241px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-section .hero-content .form button{
+    margin: auto;
+    padding-top: 20px;
   }
   .hero-section .hero-content h2 {
     font-size: 17px !important;
@@ -21,7 +27,7 @@ align-items: center;
 }
 
 article .box{
-  padding: 0px !important;
+  /* padding: 0px !important; */
 }
 .title1 h3 {
   font-size: 23px !important;
@@ -138,4 +144,4 @@ font-size: 22px !important;
   }
 }
 
-}
+
